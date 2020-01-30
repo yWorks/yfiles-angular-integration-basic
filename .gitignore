@@ -40,6 +40,8 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+license.json
+yfiles-typeinfo.js
 
 # System Files
 .DS_Store
