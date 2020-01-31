@@ -19,7 +19,9 @@ Adding yFiles as a dependency is as easy as installing an external library from 
 
 1. Add yFiles for HTML as npm dependency to the created project:
 
-   - If you have a fresh yFiles for HTML package, you need to `npm pack` the library first by running `npm pack` in `<yfiles-package>/lib/es-module/`. This creates a tar-ball that can be installed as npm dependency in other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
+   - If you have a fresh yFiles for HTML package, you need to `npm pack` the library first by running `npm pack`
+     in `<yfiles-package>/lib/es-modules/`. This creates a tarball that can be installed as npm dependency in
+     other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
 
      Note: This sample project runs `npm pack` as `preinstall` script in the `package.json`.
 
@@ -32,7 +34,7 @@ Adding yFiles as a dependency is as easy as installing an external library from 
      ```
 
 2. Now install the newly added dependency with `npm install`.
-3. Include `yfiles.css`, which is an integral part of yFiles for HTML. For example add `@import '~yfiles/yfiles.css';'` global style in `styles.css`.
+3. Include `yfiles.css`, which is an integral part of yFiles for HTML. For example add `@import '~yfiles/yfiles.css';'` to the global styles in `styles.css`.
 
 After installing the dependency, you can import classes from `yfiles` in your project. Since yFiles is installed as proper npm dependency, IDEs provide full code-completion and automatic imports out of the box to easily work with the library.
 
@@ -42,9 +44,10 @@ With the yFiles dependency, you can easily create a new Angular component that c
 
 1. Run `ng generate component graph-component` to scaffold a new Angular component.
 2. Then add a container `div` in the `graph-component.component.html` that hosts the yFiles GraphComponent and specify a size in `graph-component.component.css` for it.
-3. In `graph-component.component.ts`, instantiate a new GraphComponent in the container `div` with editing capabilities and a basic sample graph. See the content of `/src/app/graph-component/graph-component.component.ts` in this repository for the full implementation.
+3. In `graph-component.component.ts`, instantiate a new GraphComponent in the container `div` with editing capabilities
+   and a basic sample graph. See the contents of `/src/app/graph-component/graph-component.component.ts` in this repository for the full implementation.
 
-   Also, make sure to configure your `license.json` at the library (see `graph-component.component.ts`).
+   Also, make sure to configure your `license.json` for the library (see `graph-component.component.ts`).
 
 4. Add the new component to the `/src/app/app.component.html` that was created by the Angular CLI.
 
