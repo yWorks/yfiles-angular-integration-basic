@@ -1,8 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component'
-import { GraphComponentComponent } from './graph-component/graph-component.component'
+import { AppComponent } from './app.component';
+import { GraphComponentComponent } from './graph-component/graph-component.component';
 
 @NgModule({
   declarations: [AppComponent, GraphComponentComponent],
