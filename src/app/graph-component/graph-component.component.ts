@@ -10,7 +10,7 @@ License.value = licenseData;
   styleUrls: ['./graph-component.component.css']
 })
 export class GraphComponentComponent implements AfterViewInit {
-  @ViewChild('graphComponentRef', { static: false }) graphComponentRef!: ElementRef;
+  @ViewChild('graphComponentRef') graphComponentRef!: ElementRef;
   graphComponent!: GraphComponent;
 
   ngAfterViewInit() {
