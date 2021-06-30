@@ -8,8 +8,8 @@ This sample application serves as a basic scaffold of how to integrate [yFiles f
 
 ## Version Information
 
-- Angular CLI v10.2
-- yFiles for HTML 2.3
+- Angular CLI v12.1
+- yFiles for HTML 2.4
 
 ## Getting Started
 
