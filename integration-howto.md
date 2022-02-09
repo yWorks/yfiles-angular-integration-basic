@@ -6,7 +6,7 @@ TL;DR Add yFiles as a dependency in the `package.json` and start importing yFile
 
 ## Running the CLI
 
-Run the Vue-Cli with `> ng new yfiles-angular-cli-integration` and select following options:
+Run @angular/cli with `> ng new yfiles-angular-cli-integration` and select following options:
 
 - `? Would you like to add Angular routing?` No
 - `? Which stylesheet format whould you like to use?` CSS
@@ -29,7 +29,7 @@ Adding yFiles as a dependency is as easy as installing an external library from 
      ```
      "dependencies": {
        ...
-       "yfiles": "../yFiles-for-HTML-Complete-2.4.0.3-Evaluation/lib-dev/es-modules/yfiles-24.0.2-eval-dev.tgz"
+       "yfiles": "../yFiles-for-HTML-Complete-2.4.0.5-Evaluation/lib-dev/es-modules/yfiles-24.0.5-eval-dev.tgz"
      },
      ```
 
