@@ -14,17 +14,21 @@ export class GraphComponentComponent implements AfterViewInit {
   graphComponent!: GraphComponent
 
   ngAfterViewInit(): void {
-    // instantiate a new GraphComponent
-    this.graphComponent = new GraphComponent(this.graphComponentRef.nativeElement)
-
-    // configure an input mode for out of the box editing
-    this.graphComponent.inputMode = new GraphEditorInputMode()
-
-    // create some graph elements
-    this.createSampleGraph(this.graphComponent.graph)
-
+    if (!this.graphComponent) {
+      // instantiate a new GraphComponent once
+      this.graphComponent = this.initializeGraphComponent()
+    }
     // center the newly created graph
     this.graphComponent.fitGraphBounds()
+  }
+
+  initializeGraphComponent(): GraphComponent {
+    const graphComponent = new GraphComponent(this.graphComponentRef.nativeElement)
+    // configure an input mode for out of the box editing
+    graphComponent.inputMode = new GraphEditorInputMode()
+    // create some graph elements
+    this.createSampleGraph(graphComponent.graph)
+    return graphComponent
   }
 
   createSampleGraph(graph: IGraph): void {

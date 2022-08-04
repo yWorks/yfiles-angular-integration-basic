@@ -8,8 +8,8 @@ This sample application serves as a basic scaffold of how to integrate [yFiles f
 
 ## Version Information
 
-- Angular CLI v12.1
-- yFiles for HTML 2.4
+- Angular CLI v14.1
+- yFiles for HTML 2.5
 
 ## Getting Started
 
@@ -56,5 +56,5 @@ and customize the interaction with the graph. Generate Angular code for your pro
 
 ## Support
 
-If you need help with your setup or a certain feature, don't hesitate to contact our support
-through our [Customer Center](https://my.yworks.com/) or by email [yfileshtml@yworks.com](mailto:yfileshtml@yworks.com).
+If you need help with your setup or a certain feature, don't hesitate to contact our support through
+the [Customer Center](https://my.yworks.com/) or by email [yfileshtml@yworks.com](mailto:yfileshtml@yworks.com).

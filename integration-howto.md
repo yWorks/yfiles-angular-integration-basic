@@ -2,7 +2,9 @@
 
 This is a step-by-step description of how to add a yFiles graph component to a basic Angular application.
 
-TL;DR Add yFiles as a dependency in the `package.json` and start importing yFiles classes in your project.
+TL;DR Add `yfiles` as a dependency in the `package.json`,
+[include your license](https://docs.yworks.com/yfileshtml/#/dguide/licensing#_general_concept),
+and start importing yFiles classes in your project.
 
 ## Running the CLI
 
@@ -15,27 +17,25 @@ This creates a basic Angular project.
 
 ## Add yFiles as a dependency
 
-Adding yFiles as a dependency is as easy as installing an external library from the npm registry:
+Adding yFiles as a dependency is almost as easy as installing an external library from the npm registry:
 
-1. Add yFiles for HTML as npm dependency to the created project:
+1. Add yFiles for HTML as npm dependency to the created project, for example like this:
 
-   - If you have a fresh yFiles for HTML package, you need to prepare the library package first by running `npm install` in the
-     package folder. This creates the development library and a tarball that can be installed as npm dependency in
-     other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
+   ```
+   "dependencies": {
+     ...
+     "yfiles": "../yFiles-for-HTML-Complete-2.5-Evaluation/lib-dev/yfiles-25.0.0+eval-dev.tgz"
+   },
+   ```
 
-     Note: This sample project runs `npm install` as `preinstall` script in the `package.json`.
+2. Install the newly added dependency with `npm install`.
 
-   - Reference the packed library in the `package.json` of the project:
-     ```
-     "dependencies": {
-       ...
-       "yfiles": "../yFiles-for-HTML-Complete-2.4.0.6-Evaluation/lib-dev/es-modules/yfiles-24.0.6-eval-dev.tgz"
-     },
-     ```
+3. Include your yFiles license by copying the `license.json` file into your project. For more options,
+   see the [developer's guide](https://docs.yworks.com/yfileshtml/#/dguide/licensing#_general_concept)
 
-2. Now install the newly added dependency with `npm install`.
-
-After installing the dependency, you can import classes from `yfiles` in your project. Since yFiles is installed as proper npm dependency, IDEs provide full code-completion and automatic imports out of the box to easily work with the library.
+After installing the dependency, you can import classes from `yfiles` in your project. Since yFiles
+is installed as proper npm dependency, IDEs provide full code-completion and automatic imports out
+of the box to easily work with the library.
 
 ## Integrate a basic yFiles graph component
 
@@ -46,7 +46,7 @@ With the yFiles dependency, you can easily create a new Angular component that c
 3. In `graph-component.component.ts`, instantiate a new GraphComponent in the container `div` with editing capabilities
    and a basic sample graph. See the contents of `/src/app/graph-component/graph-component.component.ts` in this repository for the full implementation.
 
-   Also, make sure to configure your `license.json` for the library (see `graph-component.component.ts`).
+   Make sure to configure your license data as described above (see `graph-component.component.ts`, too).
 
 4. Add the new component to the `/src/app/app.component.html` that was created by the Angular CLI.
 
