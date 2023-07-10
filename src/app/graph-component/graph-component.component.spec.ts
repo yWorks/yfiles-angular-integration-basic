@@ -6,13 +6,10 @@ describe('GraphComponentComponent', () => {
   let component: GraphComponentComponent
   let fixture: ComponentFixture<GraphComponentComponent>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [GraphComponentComponent],
-    }).compileComponents()
-  })
-
   beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [GraphComponentComponent],
+    })
     fixture = TestBed.createComponent(GraphComponentComponent)
     component = fixture.componentInstance
     fixture.detectChanges()

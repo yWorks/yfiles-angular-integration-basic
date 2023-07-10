@@ -8,7 +8,7 @@ and start importing yFiles classes in your project.
 
 ## Running the CLI
 
-Run @angular/cli with `> ng new yfiles-angular-cli-integration` and select following options:
+Run @angular/cli with `> ng new yfiles-angular-integration-basic` and select following options:
 
 - `? Would you like to add Angular routing?` No
 - `? Which stylesheet format whould you like to use?` CSS
@@ -24,7 +24,7 @@ Adding yFiles as a dependency is almost as easy as installing an external librar
    ```
    "dependencies": {
      ...
-     "yfiles": "../yFiles-for-HTML-Complete-2.5.0.4-Evaluation/lib-dev/yfiles-25.0.4+eval-dev.tgz"
+     "yfiles": "../yFiles-for-HTML-Complete-2.6-Evaluation/lib-dev/yfiles-26.0.0+eval-dev.tgz"
    },
    ```
 
