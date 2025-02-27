@@ -1,9 +1,11 @@
 import { Component } from '@angular/core'
+import { GraphComponentComponent } from './graph-component/graph-component.component'
 
 @Component({
   selector: 'app-root',
+  imports: [GraphComponentComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'yfiles-angular-integration-basic'

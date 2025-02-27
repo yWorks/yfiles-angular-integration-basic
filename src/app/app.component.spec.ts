@@ -5,7 +5,7 @@ describe('AppComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [AppComponent],
-    })
+    }),
   )
 
   it('should create the app', () => {
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
     fixture.detectChanges()
     const compiled = fixture.nativeElement as HTMLElement
     expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'yfiles-angular-integration-basic app is running!'
+      'yfiles-angular-integration-basic app is running!',
     )
   })
 })

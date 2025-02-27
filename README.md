@@ -8,8 +8,8 @@ This sample application serves as a basic scaffold of how to integrate [yFiles f
 
 ## Version Information
 
-- Angular CLI v16.0
-- yFiles for HTML 2.6
+- Angular CLI 19
+- yFiles for HTML 3.0
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ Just clone this repository with
 git clone https://github.com/yWorks/yfiles-angular-integration-basic
 ```
 
-Then, extract a yFiles Evaluation package beside it and run
+Then, extract a yFiles Evaluation package besides it and run
 
 ```
 npm install
