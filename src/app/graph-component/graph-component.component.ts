@@ -19,7 +19,7 @@ export class GraphComponentComponent implements AfterViewInit {
       this.graphComponent = this.initializeGraphComponent()
     }
     // center the newly created graph
-    this.graphComponent.fitGraphBounds()
+    void this.graphComponent.fitGraphBounds()
   }
 
   initializeGraphComponent(): GraphComponent {
